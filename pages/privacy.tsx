@@ -29,12 +29,7 @@ export default function Privacy() {
         </section>
 
         <section className="privacy-content">
-          <div className="privacy-notice">
-            <div className="notice-box">
-              <h3>Demo Site Notice</h3>
-              <p>This is a demonstration site for affiliate approval purposes. The privacy policy below is a template and should be reviewed by legal counsel before use in production.</p>
-            </div>
-          </div>
+          
 
           <div className="privacy-sections">
             <div className="privacy-section">

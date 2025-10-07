@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from 'next'
 import { v4 as uuidv4 } from 'uuid'
 
 // Placeholder Sovrn affiliate URLs for demo
-const SOVRN_AFFILIATE_URLS = {
+const SOVRN_AFFILIATE_URLS: Record<string, string> = {
   "earbuds-001": "https://example-sovrn.com/affiliate/earbuds?subId={click_id}",
   "keyboard-002": "https://example-sovrn.com/affiliate/keyboard?subId={click_id}",
   "yogamat-003": "https://example-sovrn.com/affiliate/yogamat?subId={click_id}",

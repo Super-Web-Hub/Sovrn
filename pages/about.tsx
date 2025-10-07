@@ -37,15 +37,7 @@ export default function About() {
         </section>
 
         <section className="about-content">
-          <div className="about-notice">
-            <div className="notice-box">
-              <h3>⚠️ Demo Site Notice</h3>
-              <p>
-                This is a staging/demo site for affiliate approval purposes. The
-                content and functionality shown here are for demonstration only.
-              </p>
-            </div>
-          </div>
+          
 
           <div className="about-sections">
             <div className="about-section">

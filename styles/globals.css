@@ -606,6 +606,237 @@ body {
     }
 }
 
+/* Buy Now Page Styles */
+.buy-now-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.breadcrumb {
+    margin-bottom: 2rem;
+}
+
+.breadcrumb-link {
+    color: #6366f1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-link:hover {
+    color: #4f46e5;
+}
+
+.product-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.product-image-large {
+    position: sticky;
+    top: 2rem;
+}
+
+.image-placeholder-large {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.product-info-detail {
+    padding: 1rem 0;
+}
+
+.product-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.product-description {
+    font-size: 1.2rem;
+    color: #64748b;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.product-price-large {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #059669;
+    margin-bottom: 2rem;
+}
+
+.product-features {
+    margin-bottom: 2rem;
+}
+
+.product-features h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 1rem;
+}
+
+.product-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product-features li {
+    padding: 0.5rem 0;
+    color: #64748b;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.product-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #059669;
+    font-weight: bold;
+}
+
+.creator-recommendation {
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-left: 4px solid #6366f1;
+}
+
+.creator-info {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.creator-avatar {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.creator-details h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+.creator-details p {
+    color: #64748b;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.purchase-section {
+    text-align: center;
+}
+
+.btn-buy-large {
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    color: white;
+    border: none;
+    padding: 1.2rem 3rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 1rem;
+}
+
+.btn-buy-large:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.4);
+}
+
+.ftc-disclosure-large {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.loading-container,
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    text-align: center;
+}
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #e2e8f0;
+    border-top: 4px solid #6366f1;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.error-container h1 {
+    color: #dc2626;
+    margin-bottom: 1rem;
+}
+
+/* Mobile Responsive for Buy Now Page */
+@media (max-width: 768px) {
+    .buy-now-container {
+        padding: 1rem;
+    }
+    
+    .product-detail {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .product-image-large {
+        position: static;
+    }
+    
+    .image-placeholder-large {
+        height: 300px;
+        font-size: 3rem;
+    }
+    
+    .product-title {
+        font-size: 2rem;
+    }
+    
+    .product-price-large {
+        font-size: 2.5rem;
+    }
+    
+    .btn-buy-large {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+    }
+}
+
 @media (max-width: 480px) {
     .hero-title {
         font-size: 1.75rem;

@@ -52,7 +52,7 @@ export default function Feed() {
                 <h3>Premium Wireless Earbuds</h3>
                 <p className="product-description">High-quality wireless earbuds with noise cancellation and 24-hour battery life.</p>
                 <div className="product-price">$89.99</div>
-                <a href="/api/redirect?post_id=earbuds-001" className="btn btn-buy" target="_blank" rel="noopener noreferrer">Buy Now</a>
+                <Link href="/buy/earbuds-001" className="btn btn-buy">Buy Now</Link>
               </div>
             </div>
 
@@ -84,7 +84,7 @@ export default function Feed() {
                 <h3>Ergonomic Mechanical Keyboard</h3>
                 <p className="product-description">Split-design mechanical keyboard with customizable RGB lighting and wrist support.</p>
                 <div className="product-price">$149.99</div>
-                <a href="/api/redirect?post_id=keyboard-002" className="btn btn-buy" target="_blank" rel="noopener noreferrer">Buy Now</a>
+                <Link href="/buy/keyboard-002" className="btn btn-buy">Buy Now</Link>
               </div>
             </div>
 
@@ -116,7 +116,7 @@ export default function Feed() {
                 <h3>Eco-Friendly Yoga Mat</h3>
                 <p className="product-description">Premium non-slip yoga mat made from sustainable materials with beautiful gradient colors.</p>
                 <div className="product-price">$59.99</div>
-                <a href="/api/redirect?post_id=yogamat-003" className="btn btn-buy" target="_blank" rel="noopener noreferrer">Buy Now</a>
+                <Link href="/buy/yogamat-003" className="btn btn-buy">Buy Now</Link>
               </div>
             </div>
 

@@ -78,8 +78,7 @@ export default function Privacy() {
             <div className="privacy-section">
               <h2>Contact Us</h2>
               <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-              <p>Email: privacy@afleuncer.com</p>
-              <p>Address: 123 Demo Street, Demo City, DC 12345</p>
+              <p>Email: jgewirz@gmail.com</p>
             </div>
           </div>
         </section>

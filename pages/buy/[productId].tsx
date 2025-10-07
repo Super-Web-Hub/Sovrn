@@ -59,7 +59,7 @@ const PRODUCTS = {
     creator: {
       name: "Emma Wilson",
       avatar: "👩‍🎨",
-      post: "Finally found the perfect yoga mat! It's non-slip, eco-friendly, and the colors are gorgeous. My practice has never been better! 🧘‍♀️"
+      post: "Finally found the perfect yoga mat! It&apos;s non-slip, eco-friendly, and the colors are gorgeous. My practice has never been better! 🧘‍♀️"
     }
   }
 }
@@ -100,7 +100,7 @@ export default function BuyNow() {
     return (
       <div className="error-container">
         <h1>Product Not Found</h1>
-        <p>The product you're looking for doesn't exist.</p>
+        <p>The product you&apos;re looking for doesn&apos;t exist.</p>
         <Link href="/feed" className="btn btn-primary">Back to Feed</Link>
       </div>
     )
@@ -160,7 +160,7 @@ export default function BuyNow() {
                   <div className="creator-avatar">{product.creator.avatar}</div>
                   <div className="creator-details">
                     <h4>{product.creator.name} recommends:</h4>
-                    <p>"{product.creator.post}"</p>
+                    <p>&ldquo;{product.creator.post}&rdquo;</p>
                   </div>
                 </div>
               </div>
